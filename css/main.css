@@ -292,6 +292,9 @@ input[type="radio"] {
   width: 95px;
   margin: 0 0 0 2rem;
 }
+#typeofhouse img {
+  cursor: pointer;
+}
 input[type="checkbox"] {
   border: 2px solid #6fc3;
   width: 20px;
@@ -326,4 +329,23 @@ output {
   color: white;
   position: absolute;
   margin-left: 5px;
+}
+.tipesofcleaning {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2rem;
+  width: 95%;
+}
+.tipesofcleaning > div {
+  width: 25%;
+  display: grid;
+  place-items: center;
+  color: #ffffff;
+}
+.tipesofcleaning > div > figure {
+  padding: 1rem;
+}
+.total {
+  font-size: 31px;
+  font-weight: 600;
 }

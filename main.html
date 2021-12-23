@@ -135,18 +135,15 @@
             <h2>1. Выберите тип помещения</h2>
             <form>
               <fieldset id="typeofhouse">
-                <label
-                  ><input type="radio" value="aparmetn" name="typeofhouse" /><img
-                    src="./images/inputimages/apartment.png"
-                    alt="imagen of an apparment"
+                <input type="radio" id="aparmetn" value="400" name="typeofproperty" /><label
+                  for="aparmetn"
+                  ><img src="./images/inputimages/apartment.png" alt="imagen of an apparment"
                 /></label>
-                <label
-                  ><input type="radio" value="house" name="typeofhouse" /><img
+                <input type="radio" id="house" value="500" name="typeofproperty" /><label for="house"><img
                     src="./images/inputimages/house.png"
                     alt="image of a house"
                 /></label>
-                <label
-                  ><input type="radio" value="ofice" name="typeofhouse" /><img
+                <input type="radio" id ="ofice" value="700" name="typeofproperty" /><label for="ofice"><img
                     src="./images/inputimages/office.png"
                     alt="image of an apparment"
                 /></label>
@@ -163,10 +160,10 @@
                 min="20"
                 max="350"
                 step="1"
+                id="range"
                 name="meters"
-                oninput="this.nextElementSibling.value=this.value"
                 data-range-color="#fee044"
-              /><output>20</output>
+              /><output id="myRange">20</output>
             </form>
           </section>
         </section>
@@ -178,50 +175,50 @@
                 <label
                   ><input
                     type="checkbox"
-                    value="Мытьё холодильника (внутри)"
-                    data-cal-value="500"
+                    value="100"
+                    data-cal-value="100"
                   />Мытьё холодильника (внутри)</label
                 >
                 <label
                   ><input
                     type="checkbox"
-                    value="Мытьё холодильника (внутри)"
-                    data-cal-value="500"
+                    value="150"
+                    data-cal-value="200"
                   />Мытьё микроволновки (внутри)
                 </label>
                 <label
                   ><input
                     type="checkbox"
-                    value="Мытьё холодильника (внутри)"
-                    data-cal-value="500"
+                    value="85"
+                    data-cal-value="300"
                   />Уборка балкона</label
                 >
                 <label
                   ><input
                     type="checkbox"
-                    value="Мытьё холодильника (внутри)"
-                    data-cal-value="500"
+                    value="45"
+                    data-cal-value="400"
                   />Приехать за ключами</label
                 >
                 <label
                   ><input
                     type="checkbox"
-                    value="Мытьё холодильника (внутри)"
+                    value="35"
                     data-cal-value="500"
                   />Привезти ключи обратно</label
                 >
                 <label
                   ><input
                     type="checkbox"
-                    value="Мытьё холодильника (внутри)"
-                    data-cal-value="500"
+                    value="32"
+                    data-cal-value="600"
                   />Дополнительный сан. узел</label
                 >
                 <label
                   ><input
                     type="checkbox"
-                    value="Мытьё холодильника (внутри)"
-                    data-cal-value="500"
+                    value="44"
+                    data-cal-value="700"
                   />Выезд оборудования (промышленный пылесос, стремянка, парогенератор)</label
                 >
               </form>
@@ -231,53 +228,93 @@
                 <label
                   ><input
                     type="checkbox"
-                    value="Мытьё холодильника (внутри)"
-                    data-cal-value="500"
+                    value="55"
+                    data-cal-value="50"
                   />Мытьё кухонных шкафов (внутри)</label
                 >
                 <label
                   ><input
                     type="checkbox"
-                    value="Мытьё холодильника (внутри)"
-                    data-cal-value="500"
+                    value="99"
+                    data-cal-value="60"
                   />Глажка белья</label
                 >
                 <label
                   ><input
                     type="checkbox"
-                    value="Мытьё холодильника (внутри)"
-                    data-cal-value="500"
+                    value="70"
+                    data-cal-value="70"
                   />Мытьё люстры</label
                 >
                 <label
                   ><input
                     type="checkbox"
-                    value="Мытьё холодильника (внутри)"
-                    data-cal-value="500"
+                    value="55"
+                    data-cal-value="80"
                   />Мытьё хрустальной люстры</label
                 >
                 <label
                   ><input
                     type="checkbox"
-                    value="Мытьё холодильника (внутри)"
-                    data-cal-value="500"
+                    value="5"
+                    data-cal-value="90"
                   />Мытьё окон</label
                 >
                 <label
                   ><input
                     type="checkbox"
-                    value="Мытьё холодильника (внутри)"
-                    data-cal-value="500"
+                    value="8"
+                    data-cal-value="10"
                   />Использовать экологичные средства при уборке</label
                 >
               </form>
             </div>
             <div></div>
           </section>
+          <section class="results">
+            <div>
+              <h2>4. Выберите тип уборки</h2>
+            </div>
+            <div class="tipesofcleaning">
+              <div>
+                <figure>
+                  <img src="./images/tipesofcleaning/simple.png" alt="simple cleaning" />
+                </figure>
+                <p class="description">Поддерживающая</p>
+                <span id="totalsimple" class="total">7000</span>
+              </div>
+              <div>
+                <figure>
+                  <img src="./images/tipesofcleaning/general.png" alt="general cleaning" />
+                </figure>
+                <p class="description">Генеральная</p>
+                <span id="totalgeneral" class="total">7000</span>
+              </div>
+              <div>
+                <figure>
+                  <img
+                    src="./images/tipesofcleaning/remont.png"
+                    alt="after remodelation cleaning"
+                  />
+                </figure>
+                <p class="description">После ремонта</p>
+                <span id="totalremont" class="total">7000</span>
+              </div>
+              <div>
+                <div>
+                  <p>Расчетные цены не являются окончательными.</p>
+                  <br />
+                  <p>Наш менеджер сообщит вам точную цену, после обработки заявки.</p>
+                </div>
+              </div>
+            </div>
+          </section>
         </section>
       </section>
       <!-- end section calculator -->
     </main>
-    <footer></footer>
+    <footer>
+      <script type="text/javascript" src="./js/main.js"></script>
+    </footer>
   </body>
 </html>
