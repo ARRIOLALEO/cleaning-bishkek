@@ -23,8 +23,8 @@ range.addEventListener("input", function (e) {
 typeOfProperty.forEach((property) => {
   property.addEventListener("click", (e) => {
     priceproperty = parseInt(e.target.value);
+    render();
   });
-  render();
 });
 
 allCheckboxes.forEach((checkbox) => {
