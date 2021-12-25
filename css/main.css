@@ -44,6 +44,7 @@ div {
   font-weight: 500;
   font-size: 18px;
   border-radius: 5px;
+  border-style: none;
 }
 .btn-accent {
   color: black;
@@ -55,6 +56,7 @@ div {
   font-weight: 500;
   width: 220px;
   height: 40px;
+  border-style: none;
   border-radius: 5px;
 }
 .jumbotron {
@@ -427,6 +429,7 @@ output {
   width: 90%;
   color: white;
   font-size: 25px;
+  margin-bottom: 5rem;
 }
 .headerquestion {
   display: flex;
@@ -453,4 +456,140 @@ output {
   width: 30px;
   border-radius: 50%;
   justify-content: center;
+}
+.recomendations {
+  padding: 2rem;
+}
+.recomendations h1 {
+  color: black;
+  font-size: 40px;
+  font-weight: 100;
+  font-family: "Montserrat", sans-serif;
+  padding: 2rem 0 4rem 0;
+}
+.recomendations > div {
+  display: flex;
+}
+.user {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.user figure img {
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+.user h3 {
+  margin-bottom: 1rem;
+}
+.user span {
+  color: #d7d3d3;
+}
+.user p {
+  padding: 0 2rem;
+  text-align: center;
+  margin: 1.5rem 0;
+  font-weight: 100;
+}
+.recomendations h1 span {
+  color: #0000ff;
+}
+footer {
+  display: flex;
+  background-image: linear-gradient(to bottom, rgb(39 127 205), rgb(42 125 194));
+}
+footer .left,
+footer .right {
+  margin: 2rem 0;
+  width: 50%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+footer .left p {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  font-weight: 900;
+  font-size: 25px;
+}
+footer .right p {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  font-weight: 100;
+  font-size: 25px;
+}
+.social {
+  display: flex;
+  flex-direction: row;
+}
+footer span {
+  display: block;
+  padding: 1rem 0;
+}
+.phone-big {
+  font-size: 45px;
+  color: #fee044;
+  font-weight: 900;
+}
+.email-big {
+  font-size: 25px;
+  color: #ffffff;
+  font-weight: 500;
+}
+.social img {
+  width: 100px;
+  padding: 1.5rem;
+}
+
+footer form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+form button {
+  width: 65%;
+}
+input[type="text"] {
+  width: 65%;
+  border-radius: 5px;
+  outline: none;
+  border-style: none;
+  margin: 1rem 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px;
+  padding: 0.5rem;
+}
+input[type="email"] {
+  width: 65%;
+  border-radius: 5px;
+  outline: none;
+  border-style: none;
+  margin: 1rem 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px;
+  padding: 0.5rem;
+}
+textarea {
+  width: 65%;
+  border-radius: 5px;
+  outline: none;
+  margin: 1rem 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px;
+  padding: 0.5rem;
+}
+
+.hide-questions {
+  display: none;
+  opacity: 0;
+  transition: opacity 1s ease-out;
+}
+
+.contentquestion {
+  padding: 2rem;
+  font-weight: 100;
+  font-size: 16px;
+  transition: opacity 1s ease-out;
 }

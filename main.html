@@ -330,11 +330,11 @@
         <h1><span>#</span> Часто задаваемые вопросы</h1>
         <div class="containerquestions">
           <div class="question-container">
-            <div role="buton" class="headerquestion">
-              <div class="descriptionquestion">Какую бытовую химию используете для уборки?</div>
+            <div role="buton" class="headerquestion" id="question1">
+              <div class="descriptionquestion" >Какую бытовую химию используете для уборки?</div>
               <div class="iconsquestion"><div>+</div></div>
             </div>
-            <div class="contentquestion">
+            <div class="contentquestion question1">
               <p>
                 Мы используем профессиональные гипоаллергенные средства Pro-Brite, Ecover, Attitude,
                 Amway.
@@ -343,11 +343,11 @@
             </div>
           </div>
           <div class="question-container">
-            <div role="buton" class="headerquestion">
+            <div role="buton" class="headerquestion" id="question2">
               <div class="descriptionquestion">Какую бытовую химию используете для уборки?</div>
               <div class="iconsquestion"><div>+</div></div>
             </div>
-            <div class="contentquestion">
+            <div class="contentquestion question2">
               <p>
                 Мы используем профессиональные гипоаллергенные средства Pro-Brite, Ecover, Attitude,
                 Amway.
@@ -356,11 +356,11 @@
             </div>
           </div>
           <div class="question-container">
-            <div role="buton" class="headerquestion">
+            <div role="buton" class="headerquestion" id="question3">
               <div class="descriptionquestion">Какую бытовую химию используете для уборки?</div>
               <div class="iconsquestion"><div>+</div></div>
             </div>
-            <div class="contentquestion">
+            <div class="contentquestion question3" >
               <p>
                 Мы используем профессиональные гипоаллергенные средства Pro-Brite, Ecover, Attitude,
                 Amway.
@@ -369,11 +369,11 @@
             </div>
           </div>
           <div class="question-container">
-            <div role="buton" class="headerquestion">
+            <div role="buton" class="headerquestion" id="question4">
               <div class="descriptionquestion">Какую бытовую химию используете для уборки?</div>
               <div class="iconsquestion"><div>+</div></div>
             </div>
-            <div class="contentquestion">
+            <div class="contentquestion question4">
               <p>
                 Мы используем профессиональные гипоаллергенные средства Pro-Brite, Ecover, Attitude,
                 Amway.
@@ -384,8 +384,66 @@
         </div>
       </section>
       <!-- end questions and awnser -->
+      <!-- start recomendations -->
+      <section class="recomendations">
+        <div>
+          <h1><span>#</span> Отзывы наших клиентов</h1>
+        </div>
+        <div>
+          <div class="user">
+            <figure><img src="./images/users/sergei.webp" alt="photo user" /></figure>
+            <h3>Сергей</h3>
+            <span class="gray">Поддерживающая уборка</span>
+            <p>
+              Спасибо вам! Приехали быстро, отмыли все, качественно убрались. Доставили для уборки
+              весь необходимый комплект инвентаря, техники. Оставили хорошее настроение. Буду
+              обращаться еще и советовать друзьям.
+            </p>
+          </div>
+          <div class="user">
+            <figure><img src="./images/users/sergei.webp" alt="photo user" /></figure>
+            <h3>Сергей</h3>
+            <span class="gray">Поддерживающая уборка</span>
+            <p>
+              Спасибо вам! Приехали быстро, отмыли все, качественно убрались. Доставили для уборки
+              весь необходимый комплект инвентаря, техники. Оставили хорошее настроение. Буду
+              обращаться еще и советовать друзьям.
+            </p>
+          </div>
+          <div class="user">
+            <figure><img src="./images/users/sergei.webp" alt="photo user" /></figure>
+            <h3>Сергей</h3>
+            <span class="gray">Поддерживающая уборка</span>
+            <p>
+              Спасибо вам! Приехали быстро, отмыли все, качественно убрались. Доставили для уборки
+              весь необходимый комплект инвентаря, техники. Оставили хорошее настроение. Буду
+              обращаться еще и советовать друзьям.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- end recomendations -->
     </main>
     <footer>
+      <div class="left">
+        <p>Работаем ежедневно, с 09:00 до 18:00</p>
+        <span class="phone-big">0702 207080</span>
+        <span class="email-big">bishkek-cleanign@gmail.com</span>
+        <div class="social">
+          <figure><a href="#"><img src="./images/inst.png" alt="logo instagram" /></a></figure>
+          <figure><a href="#"><img src="./images/tlg.png" alt="logo telegram"/></a></figure>
+          <figure><a href="#"><img src="./images/wsp.png" alt="logo whassap"/></a></figure>
+        </div>
+      </div>
+      <div class="right">
+        <p class="description-form">Есть вопрос? Отправьте нам, заполнив эту форму</p>
+        <form>
+          <input type="text" placeholder="Ваше Имя" name="name" />
+          <input type="email" placeholder="Ваш email" name="email" />
+          <textarea name="coment" placeholder="Сообщение" rows="4" cols="50"></textarea>
+          <button type="submit" class="btn-accent">Отправить</button>
+        </form>
+      </div>
       <script type="text/javascript" src="./js/main.js"></script>
     </footer>
   </body>

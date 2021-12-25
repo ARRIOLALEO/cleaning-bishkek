@@ -37,3 +37,17 @@ allCheckboxes.forEach((checkbox) => {
     render();
   });
 });
+
+// get all the questions and cover them
+
+const questions = document.querySelectorAll(".contentquestion");
+questions.forEach((descriptions) => descriptions.classList.add("hide-questions"));
+
+const headerquestions = document.querySelectorAll(".headerquestion");
+console.log(headerquestions);
+headerquestions.forEach((header) => {
+  header.addEventListener("click", function () {
+    const nextElement = document.getElementsByClassName(`${header.id}`);
+    nextElement[0].classList.toggle("hide-questions");
+  });
+});
