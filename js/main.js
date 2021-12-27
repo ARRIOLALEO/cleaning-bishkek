@@ -8,7 +8,6 @@ let priceproperty = 1;
 let services = 1;
 let fmeters = 50;
 function render() {
-  console.log(services, priceproperty, fmeters);
   totalSimple.innerHTML = parseInt(
     parseInt(services) + parseInt(priceproperty) * parseInt(fmeters)
   );
@@ -49,5 +48,36 @@ headerquestions.forEach((header) => {
   header.addEventListener("click", function () {
     const nextElement = document.getElementsByClassName(`${header.id}`);
     nextElement[0].classList.toggle("hide-questions");
+  });
+});
+
+// controls popups
+
+const popups = document.querySelectorAll(".popups");
+popups.forEach((popup) => {
+  popup.classList.add("hide-questions");
+});
+
+//get all the show popup buttons
+
+const showpopups = document.querySelectorAll(".showpopup");
+console.log(showpopups);
+showpopups.forEach((show) => {
+  show.addEventListener("click", (e) => {
+    const popuptoshow = document.querySelector(`.${e.target.id}`);
+    popuptoshow.style.overflow = "auto";
+    popuptoshow.classList.toggle("hide-questions");
+  });
+});
+
+//get all the close popus
+
+const allclosepopups = document.querySelectorAll(".btn-close");
+allclosepopups.forEach((closebtn) => {
+  const popupremoved = document.querySelector(`.${closebtn.id}-cleanning`);
+  closebtn.addEventListener("click", function () {
+    popupremoved.classList.toggle("hide-questions");
+    popupremoved.style.overflow = "initial";
+    document.body.style.overflow = "initial";
   });
 });

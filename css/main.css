@@ -36,6 +36,7 @@ div {
   font-family: "Montserrat", sans-serif;
   color: black;
   display: flex;
+  cursor: pointer;
   justify-content: center;
   align-items: center;
   background-color: #c1f1fc;
@@ -50,6 +51,7 @@ div {
   color: black;
   display: flex;
   justify-content: center;
+  cursor: pointer;
   align-items: center;
   background-color: #fee044;
   font-size: 18px;
@@ -436,6 +438,7 @@ output {
   flex-direction: row;
   padding: 1rem;
   border-bottom: solid 0.1rem;
+  cursor: pointer;
   border-bottom-style: outset;
 }
 .descriptionquestion {
@@ -582,7 +585,7 @@ textarea {
 }
 
 .hide-questions {
-  display: none;
+  visibility: hidden;
   opacity: 0;
   transition: opacity 1s ease-out;
 }
@@ -592,4 +595,105 @@ textarea {
   font-weight: 100;
   font-size: 16px;
   transition: opacity 1s ease-out;
+}
+
+.simple-cleanning,
+.general-cleanning,
+.remont-cleanning {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 2rem;
+  width: 100%;
+  height: 100%;
+  background-color: #000000a3;
+}
+.btn-close {
+  margin-left: 90%;
+  font-size: 30px;
+  font-weight: 900;
+  color: #ffffff;
+}
+.content {
+  background-color: #ffffff;
+  padding: 5rem;
+  max-width: 80%;
+  border-radius: 5px;
+}
+.content h2 {
+  padding: 2rem;
+}
+
+@media all and (max-width: 500px) {
+  .jumbotron {
+    flex-direction: column;
+    height: auto;
+  }
+  .jumbotron h1 {
+    font-size: 30px;
+    padding-bottom: 1.5rem;
+  }
+  .jumbotron h2 {
+    font-size: 25px;
+    padding-bottom: 2.5rem;
+  }
+  .jumbotron .left {
+    width: 100%;
+    padding: 1.5rem;
+  }
+  .jumbotron p {
+    padding-bottom: 2.5rem;
+  }
+  .jumbotron .btns {
+    flex-direction: column;
+  }
+  .jumbotron .btn-accent {
+    margin-bottom: 1rem;
+  }
+  .jumbotron .btn,
+  .jumbotron .btn-accent {
+    width: 80%;
+  }
+  .jumbotron .right {
+    width: 100%;
+    padding: 1.5rem;
+  }
+
+  .ourplus {
+    flex-direction: column;
+  }
+
+  .about-us {
+    flex-direction: column;
+  }
+  .services-description {
+    flex-direction: column;
+  }
+  .services-description .container {
+    width: 90%;
+    margin: 1rem;
+  }
+
+  .first-form {
+    flex-direction: column;
+  }
+  .calculator .left {
+    width: 100%;
+  }
+  .calculator .right {
+    width: 100%;
+  }
+  #typeofhouse img {
+    margin: 0 0 0 1rem;
+  }
+  .formstree {
+    width: 100%;
+    flex-direction: column;
+  }
+  .formstree > div {
+    width: 90%;
+  }
+  .tipesofcleaning {
+    flex-direction: column;
+  }
 }

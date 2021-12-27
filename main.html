@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <title>Уборка квартир, домов, офисов и т.д || УБОРКА БИШКЕК 24/7</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
@@ -104,14 +105,14 @@
             <div>
               <h2>Поддерживающая уборка</h2>
               <span class="price">8000 coms </span>
-              <div role="button" class="btn hide">Что входит?</div>
+              <div role="button" class="btn hide showpopup" id="simple-cleanning">Что входит?</div>
             </div>
           </div>
           <div class="container bg2">
             <div>
               <h2>Генеральная уборка</h2>
               <span class="price">8000 coms </span>
-              <div role="button" class="btn hide">Что входит?</div>
+              <div role="button" class="btn hide showpopup" id="general-cleanning">Что входит?</div>
             </div>
           </div>
 
@@ -119,7 +120,7 @@
             <div>
               <h2>Уборка после ремонта</h2>
               <span class="price">8000 coms </span>
-              <div role="button" class="btn hide">Что входит?</div>
+              <div role="button" class="btn hide showpopup" id="remont-cleanning">Что входит?</div>
             </div>
           </div>
         </section>
@@ -331,7 +332,7 @@
         <div class="containerquestions">
           <div class="question-container">
             <div role="buton" class="headerquestion" id="question1">
-              <div class="descriptionquestion" >Какую бытовую химию используете для уборки?</div>
+              <div class="descriptionquestion">Какую бытовую химию используете для уборки?</div>
               <div class="iconsquestion"><div>+</div></div>
             </div>
             <div class="contentquestion question1">
@@ -360,7 +361,7 @@
               <div class="descriptionquestion">Какую бытовую химию используете для уборки?</div>
               <div class="iconsquestion"><div>+</div></div>
             </div>
-            <div class="contentquestion question3" >
+            <div class="contentquestion question3">
               <p>
                 Мы используем профессиональные гипоаллергенные средства Pro-Brite, Ecover, Attitude,
                 Amway.
@@ -424,15 +425,22 @@
       </section>
       <!-- end recomendations -->
     </main>
+
     <footer>
       <div class="left">
         <p>Работаем ежедневно, с 09:00 до 18:00</p>
         <span class="phone-big">0702 207080</span>
         <span class="email-big">bishkek-cleanign@gmail.com</span>
         <div class="social">
-          <figure><a href="#"><img src="./images/inst.png" alt="logo instagram" /></a></figure>
-          <figure><a href="#"><img src="./images/tlg.png" alt="logo telegram"/></a></figure>
-          <figure><a href="#"><img src="./images/wsp.png" alt="logo whassap"/></a></figure>
+          <figure>
+            <a href="#"><img src="./images/inst.png" alt="logo instagram" /></a>
+          </figure>
+          <figure>
+            <a href="#"><img src="./images/tlg.png" alt="logo telegram" /></a>
+          </figure>
+          <figure>
+            <a href="#"><img src="./images/wsp.png" alt="logo whassap" /></a>
+          </figure>
         </div>
       </div>
       <div class="right">
@@ -444,7 +452,145 @@
           <button type="submit" class="btn-accent">Отправить</button>
         </form>
       </div>
-      <script type="text/javascript" src="./js/main.js"></script>
     </footer>
+    <div class="simple-cleanning popups">
+      <div class="btn-close simple-cleanning-close" id="simple" role="button">X</div>
+      <div class="content">
+        <h2>Поддерживающая уборка</h2>
+
+        <h3>Длится 2-4 часа</h3>
+
+        <ol>
+          <li>Удаляем легкие загрязнения</li>
+          <li>Обеспыливаем и моем все поверхности на высоте 180 см</li>
+          <li>Моем и пылесосим полы и плинтуса</li>
+          <li>Моем зеркала и стеклянные поверхности</li>
+          <li>Протираем выключатели, дверные ручки, двери и дверные блоки</li>
+          <li>Раскладываем вещи по местам</li>
+          <li>Пылесосим ковры и коврики.</li>
+        </ol>
+        <h3>ухня:</h3>
+        <ol>
+          <li>Моем посуду (до 10 минут)</li>
+          <li>Моем сантехнику</li>
+          <li>Моем снаружи плиту, холодильник, вытяжку</li>
+          <li>Протираем фасады шкафов</li>
+          <li>Протираем столешницу и кухонный фартук.</li>
+        </ol>
+        <h3>Ванная комната:</h3>
+        <ol>
+          <li>Чистим унитаз, моем ванную/душевую и раковину</li>
+          <li>Моем зеркала и стеклянную поверхность</li>
+          <li>Убираем не застарелые загрязнения</li>
+          <li>Моем подоконник, батареи, пол, плинтуса.</li>
+        </ol>
+        <h3>Что мы не делаем:</h3>
+        <ol>
+          <li>Не поднимаем в комнате более 50 предметов</li>
+          <li>Не удаляем застарелые загрязнения, ржавчину, известковый налёт и т.п.</li>
+          <li>Не убираем строительную пыль, следы краски, бетона</li>
+          <li>Не проводим работы выше 1,8 от пола.</li>
+        </ol>
+      </div>
+    </div>
+
+
+    <div class="general-cleanning popups">
+      <div class="btn-close general-cleanning-close" id="general" role="button">X</div>
+      <div class="content">
+        <h2>Генеральная уборка</h2>
+
+        <h3>Длится 6-8 часов</h3>
+
+        <ol>
+          <li>Обеспыливаем стены, потолки</li>
+          <li>Удаляем сложные загрязнения</li>
+          <li>Моем полы, плинтуса, выключатели, дверные ручки, дверные блоки</li>
+          <li>Моем мебель снаружи</li>
+          <li>Моем зеркала и стеклянные поверхности</li>
+          <li>Моем светильники</li>
+          <li>Удаляем пыль с предметов интерьера</li>
+          <li>Моем кондиционеры</li>
+          <li>Моем подоконники, батареи, трубы, карнизы</li>
+          <li>Меняем постельное белье.</li>
+        </ol>
+        <h3>ухня:</h3>
+        <ol>
+          <li> Моем кухонный гарнитур снаружи и внутри</li>
+          <li>Удаляем застаревшие загрязнения</li>
+          <li>Моем кухонный фартук и сантехнику</li>
+          <li>Моем снаружи холодильник, плиту, духовой шкаф</li>
+          <li>Моем посуду (до 10 минут).</li>
+        </ol>
+        <h3>Ванная комната:</h3>
+        <ol>
+          <li>Моем стены</li>
+          <li>Очищаем межплиточные швы.</li>
+          <li>Моем душевую кабину/ванную</li>
+          <li>Моем и дезинфицируем сантехнику</li>
+          <li>Протираем шкафы я внешней стороны.</li>
+        </ol>
+        <h3>Что мы не делаем:</h3>
+        <ol>
+          <li>Не моем окна</li>
+          <li>Не проводим химическую чистку ковров</li>
+          <li>Не удаляем следы краски и бетона</li>
+          <li>Не удаляем строительную пыль</li>
+          <li>Не двигаем крупногабаритную мебель.</li>
+        </ol>
+      </div>
+    </div>
+
+ <div class="remont-cleanning popups">
+      <div class="btn-close remont-cleanning-close" id="remont" role="button">X</div>
+      <div class="content">
+        <h2>Уборка после ремонта</h2>
+
+
+        <ol>
+          <li> Очищаем от пыли все поверхности</li>
+          <li> Удаляем следы от строительных смесей</li>
+          <li>Моем двери и дверные блоки</li>
+          <li>Моем подоконники, плинтуса, батареи</li>
+          <li>Очищаем зеркала и стеклянные поверхности</li>
+          <li>Моей светильники( кроме хрустальных)</li>
+          <li>Моем мебель( полки должны быть пустыми)</li>
+          <li>Моем кондиционеры и фильтра</li>
+        </ol>
+        <h3>ухня:</h3>
+        <ol>
+          <li>Очищаем от пыли все поверхности</li>
+          <li>Удаляем трудные загрязнения</li>
+          <li>Моем фасад кухонной мебели</li>
+          <li>Моем кухонный гарнитур внутри( ящики должны быть пустыми)</li>
+          <li>Моем кухонный фартук</li>
+          <li>Моем плиту, холодильник, микроволновую печь</li>
+          <li>Моем вытяжку</li>
+          <li>Моем сантехнику</li>
+          <li>Моем посуду (10 минут).</li>
+        </ol>
+        <h3>Ванная комната:</h3>
+        <ol>
+          <li>Очищаем от пыли все поверхности</li>
+          <li>Моем пол, плитку, батареи.</li>
+          <li>Моем душевую кабину/ ванную</li>
+          <li>Моем раковину, унитаз</li>
+          <li>Моем зеркала и стрелянную поверхность</li>
+          <li>Очищаем межплиточные швы.</li>
+        </ol>
+        <h3>Что мы не делаем:</h3>
+        <ol>
+          <li>Не моем окна</li>
+          <li>Не проводим химическую чистку ковров</li>
+          <li>Не двигаем крупногабаритную мебель.</li>
+        </ol>
+      </div>
+    </div>
+
+
+
+
+    <!-- end popups -->
+    <script type="text/javascript" src="./js/main.js"></script>
   </body>
 </html>
