@@ -81,3 +81,19 @@ allclosepopups.forEach((closebtn) => {
     document.body.style.overflow = "initial";
   });
 });
+
+// menu manipulation
+
+const menuMobile = document.querySelector(".menu-mobile");
+const closeMenu = document.querySelector(".close-menu");
+
+closeMenu.addEventListener("click", function () {
+  menuMobile.style.opacity = "0";
+  menuMobile.style.zIndex = "-1";
+});
+
+const hamburgerMenu = document.querySelector(".menu-mobil");
+hamburgerMenu.addEventListener("click", function () {
+  menuMobile.style.opacity = "1";
+  menuMobile.style.zIndex = "2";
+});

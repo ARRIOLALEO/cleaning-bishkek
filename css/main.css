@@ -625,6 +625,61 @@ textarea {
 }
 
 @media all and (max-width: 500px) {
+  .menu-mobil {
+    font-size: 75px;
+    line-height: 0.5rem;
+    margin-left: 35px;
+  }
+  .close-menu {
+    margin-top: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 42px;
+    color: white;
+    font-weight: 900;
+    margin-left: -2rem;
+  }
+  .menu-mobile {
+    background-color: blue;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    opacity: 0;
+    z-index: -1;
+    height: 100%;
+    transition: all 2s;
+  }
+  .menu-mobile .menu-display {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin-top: 1rem;
+    line-height: 4;
+    align-items: center;
+  }
+  .menu-mobile .menu-display menuitem {
+    color: white;
+    font-size: 23px;
+    text-transform: uppercase;
+  }
+  .menu-mobil::before {
+    content: "-";
+  }
+  .menu-mobil::after {
+    content: "-";
+    display: flex;
+  }
+  .menu-desktop {
+    display: none;
+  }
+  .logo-desktop > img {
+    padding: 1rem;
+    max-width: 70%;
+  }
+  .social {
+    display: none;
+  }
   .jumbotron {
     flex-direction: column;
     height: auto;

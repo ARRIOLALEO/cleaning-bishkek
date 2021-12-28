@@ -3,13 +3,26 @@
   <head>
     <meta charset="utf-8" />
     <title>Уборка квартир, домов, офисов и т.д || УБОРКА БИШКЕК 24/7</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
     <header>
-      <figure><img src="./images/logo.jpeg" alt="logo clining bishkek" /></figure>
-      <menu>
+      <div class="menu-mobile">
+        <div role="button" class="close-menu"> X </div>
+        <menu class="menu-display">
+          <menuitem>Виды уборок</menuitem>
+          <menuitem>Расчет стоимости</menuitem>
+          <menuitem>О нас</menuitem>
+          <menuitem>Отзывы</menuitem>
+        </menu>
+      </div>
+      <div role="button" class="menu-mobil">-</div>
+
+      <figure class="logo-desktop">
+        <img src="./images/logo.jpeg" alt="logo clining bishkek" />
+      </figure>
+      <menu class="menu-desktop">
         <menuitem>Виды уборок</menuitem>
         <menuitem>Расчет стоимости</menuitem>
         <menuitem>О нас</menuitem>
@@ -17,13 +30,13 @@
       </menu>
       <ul>
         <li>
-          <figure><img src="./images/inst.png" alt="instagram" /></figure>
+          <figure><img class="social" src="./images/inst.png" alt="instagram" /></figure>
         </li>
         <li>
-          <figure><img src="./images/tlg.png" alt="telegram" /></figure>
+          <figure><img class="social" src="./images/tlg.png" alt="telegram" /></figure>
         </li>
         <li>
-          <figure><img src="./images/wsp.png" alt="whassap" /></figure>
+          <figure><img class="social" src="./images/wsp.png" alt="whassap" /></figure>
         </li>
       </ul>
       <div role="button" class="btn">0702 207080</div>
@@ -494,7 +507,6 @@
       </div>
     </div>
 
-
     <div class="general-cleanning popups">
       <div class="btn-close general-cleanning-close" id="general" role="button">X</div>
       <div class="content">
@@ -516,7 +528,7 @@
         </ol>
         <h3>ухня:</h3>
         <ol>
-          <li> Моем кухонный гарнитур снаружи и внутри</li>
+          <li>Моем кухонный гарнитур снаружи и внутри</li>
           <li>Удаляем застаревшие загрязнения</li>
           <li>Моем кухонный фартук и сантехнику</li>
           <li>Моем снаружи холодильник, плиту, духовой шкаф</li>
@@ -541,15 +553,14 @@
       </div>
     </div>
 
- <div class="remont-cleanning popups">
+    <div class="remont-cleanning popups">
       <div class="btn-close remont-cleanning-close" id="remont" role="button">X</div>
       <div class="content">
         <h2>Уборка после ремонта</h2>
 
-
         <ol>
-          <li> Очищаем от пыли все поверхности</li>
-          <li> Удаляем следы от строительных смесей</li>
+          <li>Очищаем от пыли все поверхности</li>
+          <li>Удаляем следы от строительных смесей</li>
           <li>Моем двери и дверные блоки</li>
           <li>Моем подоконники, плинтуса, батареи</li>
           <li>Очищаем зеркала и стеклянные поверхности</li>
@@ -586,9 +597,6 @@
         </ol>
       </div>
     </div>
-
-
-
 
     <!-- end popups -->
     <script type="text/javascript" src="./js/main.js"></script>
