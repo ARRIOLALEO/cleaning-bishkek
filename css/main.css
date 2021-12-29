@@ -4,6 +4,9 @@
   padding: 0;
   box-sizing: content-box;
 }
+body {
+  margin: 0;
+}
 header {
   display: flex;
   flex-direction: row;
@@ -693,8 +696,7 @@ textarea {
     padding-bottom: 2.5rem;
   }
   .jumbotron .left {
-    width: 100%;
-    padding: 1.5rem;
+    width: 70%;
   }
   .jumbotron p {
     padding-bottom: 2.5rem;
@@ -742,7 +744,7 @@ textarea {
     margin: 0 0 0 1rem;
   }
   .formstree {
-    width: 100%;
+    width: 87%;
     flex-direction: column;
   }
   .formstree > div {
@@ -750,5 +752,47 @@ textarea {
   }
   .tipesofcleaning {
     flex-direction: column;
+  }
+  .about-us-section {
+    flex-direction: column;
+  }
+  .about-us-section .left,
+  .about-us-section .right {
+    width: 82%;
+  }
+  .about-us-section .right {
+    display: none;
+  }
+  .descriptionquestion {
+    font-size: 1px;
+  }
+  .recomendations > div {
+    flex-direction: column;
+  }
+  footer {
+    flex-direction: column;
+  }
+  footer .left,
+  footer .right {
+    width: 100%;
+  }
+  .simple-cleanning,
+  .general-cleanning,
+  .remont-cleanning {
+    width: 95%;
+    padding: 0.5rem;
+  }
+  .content h2 {
+    padding: 0 0 1rem 0;
+    font-size: 24px;
+    font-weight: 100;
+    text-align: center;
+  }
+  footer .left,
+  footer .right {
+    padding: 1rem 0;
+  }
+  .tipesofcleaning {
+    width: 80%;
   }
 }
