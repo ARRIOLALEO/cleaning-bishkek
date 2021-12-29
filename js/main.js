@@ -43,7 +43,6 @@ const questions = document.querySelectorAll(".contentquestion");
 questions.forEach((descriptions) => descriptions.classList.add("hide-questions"));
 
 const headerquestions = document.querySelectorAll(".headerquestion");
-console.log(headerquestions);
 headerquestions.forEach((header) => {
   header.addEventListener("click", function () {
     const nextElement = document.getElementsByClassName(`${header.id}`);
@@ -61,7 +60,6 @@ popups.forEach((popup) => {
 //get all the show popup buttons
 
 const showpopups = document.querySelectorAll(".showpopup");
-console.log(showpopups);
 showpopups.forEach((show) => {
   show.addEventListener("click", (e) => {
     const popuptoshow = document.querySelector(`.${e.target.id}`);
