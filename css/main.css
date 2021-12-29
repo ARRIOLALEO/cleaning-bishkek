@@ -628,6 +628,9 @@ textarea {
 }
 
 @media all and (max-width: 500px) {
+  header {
+    padding: 1rem;
+  }
   .menu-mobil {
     font-size: 75px;
     line-height: 0.5rem;
@@ -696,8 +699,10 @@ textarea {
     padding-bottom: 2.5rem;
   }
   .jumbotron .left {
-    width: 70%;
+    width: 85%;
+    padding: 0 0 2rem 2.5rem;
   }
+
   .jumbotron p {
     padding-bottom: 2.5rem;
   }
@@ -730,9 +735,19 @@ textarea {
     width: 90%;
     margin: 1rem;
   }
-
+  .ourservices .ourservices-title {
+    padding: 1rem;
+    font-size: 32px;
+  }
   .first-form {
     flex-direction: column;
+  }
+  .content {
+    padding: 2rem;
+  }
+  .container > div > h2 {
+    font-weight: 400;
+    line-height: 1.5rem;
   }
   .calculator .left {
     width: 100%;
