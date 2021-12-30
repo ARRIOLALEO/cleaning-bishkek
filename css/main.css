@@ -15,6 +15,14 @@ header {
   background-image: linear-gradient(to bottom, rgb(39 127 205), rgb(42 125 194));
   align-items: center;
 }
+.menu-mobile {
+  opacity: 0;
+  z-index: -1;
+  width: 0;
+}
+.menu-mobil {
+  z-index: -1;
+}
 header ul {
   display: flex;
   flex-direction: row;
@@ -245,10 +253,11 @@ h2 {
   background-image: linear-gradient(to bottom, rgb(39 127 205), rgb(42 125 194));
 }
 .calculator h2 {
-  padding: 2rem 0 1rem 2rem;
-  font-size: 35px;
+  padding: 2rem 1rem 1rem 2rem;
+  font-size: 24px;
   color: white;
-  font-weight: 400;
+  font-weight: 100;
+  line-height: 2rem;
 }
 .calculator span {
   color: #fee044;
@@ -360,9 +369,9 @@ output {
   display: flex;
 }
 .about-us-section h1 {
-  font-size: 35px;
+  font-size: 22px;
   color: #111111;
-  font-weight: 500;
+  font-weight: 100;
   padding-bottom: 2rem;
 }
 .about-us-section h1 span {
@@ -423,9 +432,9 @@ output {
 }
 .questions h1 {
   text-align: center;
-  padding: 2rem 0 1rem 2rem;
-  font-size: 35px;
-  font-weight: 400;
+  padding: 2rem 1rem 1rem 2rem;
+  font-size: 24px;
+  font-weight: 100;
 }
 .questions h1 span {
   color: #fee044;
@@ -468,13 +477,18 @@ output {
 }
 .recomendations h1 {
   color: black;
-  font-size: 40px;
+  font-size: 24px;
+  text-align: center;
   font-weight: 100;
   font-family: "Montserrat", sans-serif;
-  padding: 2rem 0 4rem 0;
+  padding: 2rem 1rem 4rem 0;
 }
 .recomendations > div {
   display: flex;
+}
+.content h2 {
+  font-weight: 100;
+  line-height: 1.5rem;
 }
 .user {
   display: flex;
@@ -635,6 +649,7 @@ textarea {
     font-size: 75px;
     line-height: 0.5rem;
     margin-left: 35px;
+    z-index: 1;
   }
   .close-menu {
     margin-top: 1rem;
@@ -692,6 +707,7 @@ textarea {
   }
   .jumbotron h1 {
     font-size: 30px;
+    font-weight: 100%;
     padding-bottom: 1.5rem;
   }
   .jumbotron h2 {
@@ -746,7 +762,7 @@ textarea {
     padding: 2rem;
   }
   .container > div > h2 {
-    font-weight: 400;
+    font-weight: 100;
     line-height: 1.5rem;
   }
   .calculator .left {
@@ -779,7 +795,7 @@ textarea {
     display: none;
   }
   .descriptionquestion {
-    font-size: 1px;
+    font-size: 15px;
   }
   .recomendations > div {
     flex-direction: column;
